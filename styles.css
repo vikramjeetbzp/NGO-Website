@@ -1,0 +1,834 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #fff;
+}
+
+/* ============================================
+   NAVBAR - RESPONSIVE
+   ============================================ */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f2342;
+    padding: 10px 15px;
+    position: relative;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+}
+
+#logo_img{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: #c9a961;
+}
+
+.nav-links.active{
+    display: flex;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.intro{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/cover02.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#intro-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+#ngo-name{
+    font-size: 32px;
+    color: #0f2342;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+#est-box{
+    font-size: 16px;
+    color: #0f2342;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #0f2342;
+}
+
+h1{
+    font-size: 28px;
+    color: #0f2342;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 26px;
+    color: #0f2342;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 16px;
+    color: #0f2342;
+    line-height: 1.6;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about{
+    display: flex;
+    gap: 20px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main-box{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#about-content{
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+    background: #f8fafc;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#about-btn{
+    background-color: #0f2342;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#about-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#about-btn:hover{
+    background-color: #c9a961;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   ACTION BAR
+   ============================================ */
+
+#action-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f8fafc;
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+#action-bar button{
+    background-color: #0f2342;
+    color: #fff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#action-bar button:hover{
+    background-color: #c9a961;
+    transform: translateY(-2px);
+}
+
+#action-bar button a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* ============================================
+   GALLERY SECTION
+   ============================================ */
+
+.gallery{
+    padding: 30px 20px;
+}
+
+.gallery-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-images img{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.gallery-images img:hover{
+    transform: scale(1.05);
+}
+
+/* ============================================
+   FACILITY SECTION
+   ============================================ */
+
+#Facility-content{
+    padding: 25px;
+    text-align: center;
+    margin: 30px 20px;
+    background: #f8fafc;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   VISION SECTION
+   ============================================ */
+
+.vision{
+    padding: 30px 20px;
+    background: #fff;
+}
+
+#container01{
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#vision-img-container{
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+}
+
+#vision-img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#vision-content{
+    flex: 1;
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#vision-content h1{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#vision-links{
+    list-style: none;
+    padding: 0;
+}
+
+#vision-links li{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #0f2342;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#vision-links li:before{
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #c9a961;
+    font-weight: bold;
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+#contact-content{
+    padding: 25px;
+    text-align: center;
+    margin: 30px 20px;
+    background: #f8fafc;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-links{
+    font-size: 15px;
+    color: #0f2342;
+    line-height: 1.8;
+    list-style: none;
+    margin: 15px 0;
+}
+
+#contact-btn{
+    background-color: #0f2342;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#contact-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact-btn:hover{
+    background-color: #c9a961;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer{
+    background: #0f2342;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    font-size: 14px;
+    color: #fff;
+}
+
+/* ============================================
+   MOBILE - PHONE (up to 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+    .navbar{
+        padding: 8px 10px;
+    }
+
+    #logo_img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #0f2342;
+        gap: 0;
+        display: none;
+        padding: 15px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li{
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links li:last-child{
+        border-bottom: none;
+    }
+
+    .nav-links li a{
+        font-size: 13px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .intro{
+        min-height: 40vh;
+    }
+
+    #ngo-name{
+        font-size: 22px;
+        color: #0f2342;
+    }
+
+    #est-box{
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    h1{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .about{
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    #main-box{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #about-content{
+        padding: 15px;
+    }
+
+    #action-bar{
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1000;
+        flex-direction: row;
+        gap: 8px;
+        padding: 10px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    #action-bar button{
+        flex: 1;
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .gallery-images img{
+        max-width: 100%;
+        height: 150px;
+    }
+
+    #Facility-content{
+        padding: 15px;
+        margin: 15px 10px;
+    }
+
+    #container01{
+        flex-direction: column-reverse;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    #vision-img-container{
+        min-width: 100%;
+    }
+
+    #vision-img{
+        max-width: 100%;
+    }
+
+    #vision-content{
+        padding: 15px;
+    }
+
+    #vision-content h1{
+        text-align: center;
+    }
+
+    #vision-links li{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #vision-links li:before{
+        display: none;
+    }
+
+    #contact-content{
+        padding: 15px;
+        margin: 15px 10px;
+    }
+
+    footer{
+        padding: 15px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+}
+
+/* ============================================
+   TABLET (480px - 768px)
+   ============================================ */
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .navbar{
+        padding: 10px 15px;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #0f2342;
+        gap: 0;
+        display: none;
+        padding: 15px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li{
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links li:last-child{
+        border-bottom: none;
+    }
+
+    .nav-links li a{
+        font-size: 14px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .intro{
+        min-height: 45vh;
+    }
+
+    #ngo-name{
+        font-size: 26px;
+        color: #0f2342;
+    }
+
+    #est-box{
+        font-size: 14px;
+        padding: 7px 14px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    .about{
+        flex-direction: column;
+        padding: 25px 15px;
+    }
+
+    #main-box{
+        flex-direction: column;
+    }
+
+    #about-content{
+        padding: 20px;
+    }
+
+    #action-bar{
+        position: fixed;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        z-index: 1000;
+        flex-direction: row;
+        gap: 10px;
+        padding: 12px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    #action-bar button{
+        flex: 1;
+        padding: 11px 10px;
+        font-size: 13px;
+    }
+
+    .gallery-images img{
+        max-width: 280px;
+        height: 180px;
+    }
+
+    #Facility-content{
+        padding: 20px;
+        margin: 25px 15px;
+    }
+
+    #container01{
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    #vision-img-container{
+        min-width: 100%;
+    }
+
+    #vision-content{
+        padding: 20px;
+    }
+
+    #vision-content h1{
+        text-align: center;
+    }
+
+    #vision-links li{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #vision-links li:before{
+        display: none;
+    }
+
+    #contact-content{
+        padding: 20px;
+        margin: 25px 15px;
+    }
+}
+
+/* ============================================
+   DESKTOP (769px and above)
+   ============================================ */
+
+@media (min-width: 769px) {
+    .navbar{
+        padding: 12px 20px;
+    }
+
+    #logo_img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-links{
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .nav-links li{
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .nav-links li a{
+        font-size: 16px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .intro{
+        min-height: 60vh;
+    }
+
+    #ngo-name{
+        font-size: 36px;
+        color: #0f2342;
+    }
+
+    #est-box{
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .about{
+        flex-direction: row;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    #main-box{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #about-content{
+        flex: 2;
+        padding: 40px;
+    }
+
+    #action-bar{
+        flex: 1;
+        position: relative;
+        min-width: 240px;
+        height: fit-content;
+        padding: 25px;
+    }
+
+    #action-bar button{
+        padding: 14px 18px;
+        font-size: 15px;
+    }
+
+    .gallery-images img{
+        max-width: 320px;
+        height: 220px;
+    }
+
+    #Facility-content{
+        padding: 30px 40px;
+        margin: 40px auto;
+    }
+
+    #container01{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px;
+        flex-wrap: nowrap;
+    }
+
+    #vision-img-container{
+        flex: 0 0 280px;
+    }
+
+    #vision-img{
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    #vision-content{
+        flex: 1;
+        padding: 20px;
+    }
+
+    #vision-content h1{
+        text-align: left;
+    }
+
+    #vision-links li{
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #vision-links li:before{
+        display: inline;
+    }
+
+    #contact-content{
+        padding: 30px 40px;
+        margin: 40px auto;
+    }
+
+    footer{
+        padding: 25px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}
