@@ -68,7 +68,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('cover02.jpeg');
+    background-image: url('.cover02.jpeg');
     background-size: cover;
     background-position: center;
 }
