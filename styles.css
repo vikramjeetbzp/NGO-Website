@@ -166,7 +166,7 @@ table thead {
 
 /* ===== Hero Section ===== */
 .hero {
-  background-image: url('../images/cover.jpeg');
+  background-image: url('./cover.jpeg');
   background-size: cover;
   background-position: center right;
   color: white;
